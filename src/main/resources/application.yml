@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/database
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    servlet:
+      load-on-startup: 1
+#  redis:
+#    database: 2
+#    host: localhost
+#    port: 6379
+#  session:
+#    store-type: redis
+#    timeout: 600s
+mybatis:
+  mapper-locations: classpath:mapper/*.xml        #这是mappper的路径，*.xml表示包含在该路径下的所有xml文件
+
+# token
+token:
+  privateKey: 'fdasfgdsagaxgsregdfdjyghjfhebfdgwe45ygrfbsdfshfdsag'
+  yangToken: 1000
+  oldToken: 3000
+
+
+
+
